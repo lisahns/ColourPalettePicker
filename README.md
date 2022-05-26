@@ -1,4 +1,7 @@
 # ColourPalettePicker
+
+https://lisahns.github.io/ColourPalettePicker/
+
 FAC on-going pre course task: Colour Palette Picker
 
 We’d like you to build a colour palette picker similar to apps like Coolors.
