@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button, input {
+    appearance: none;
+    border:none;
+    outline:none;
+}
+
+button {
+    cursor:pointer;
+    border-radius: 0.2rem;
+}
+
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #515151;
+}
+
+h1 {
+    margin:2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.generator-button {
+    color:bisque;
+    font-size:1,7rem;
+    font-weight: 700;
+    background-color: #515151;
+    transition: 0.4s ease-out;
+    padding:0.5rem;
+}
+
+.colours {
+    color: #1e2f42;
+    display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 1rem;
+margin: 3rem 0 3rem;
+}
+
+.colour {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 1.5rem 3rem;
+    color:#fff;
+    border-radius: 1rem;
+    transition: 0.4s ease-out;
+    border: 2px solid transparent;
+}
+
+.colour.copied {
+    border-color: black;
+}
+
+.lock-toggle {
+    opacity:0.6rem;
+    transition:0.4s;
+    background-color: inherit;
+}
+
+.lock-toggle.is-locked {
+    opacity:1;
+    background-color: inherit;
+}
+
+.colour-input {
+    text-align: center;
+    font-size: 1rem;
+    background-color: transparent;
+    color:inherit;
+}
+
+.copy-hex {
+    color:inherit;
+    background-color: transparent;
+    font-size:0.9rem;
+}
+
+@media (min-width:768px) {
+    .colours {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1400px) {
+    .colours {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
